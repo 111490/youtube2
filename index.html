@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Obtenez votre motif de broderie exclusif !</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 30px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .button {
+            display: block;
+            width: 100%;
+            padding: 12px 20px;
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            font-size: 16px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-bottom: 20px;
+        }
+
+        .button:hover {
+            background-color: #45a049;
+        }
+
+        .form-container {
+            background-color: #f2f2f2;
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        input[type=text], input[type=email], input[type=file] {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        .submit-button {
+            width: 100%;
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .submit-button:hover {
+            background-color: #45a049;
+        }
+
+        .note {
+            font-size: 14px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Recevez votre motif de broderie exclusif !</h1>
+        <p>Abonnez-vous à ma chaîne YouTube pour obtenir un motif de broderie unique, directement envoyé par email. Remplissez le formulaire ci-dessous pour recevoir votre motif.</p>
+
+        <!-- Bouton d'abonnement YouTube -->
+        <a href="https://www.youtube.com/@myriamnumerisationbroderie6995" target="_blank">
+            <button class="button">S'abonner à ma chaîne YouTube</button>
+        </a>
+
+        <!-- Formulaire d'inscription avec upload de capture d'écran -->
+        <div class="form-container">
+            <h2>Vos informations pour recevoir le motif de broderie</h2>
+            <form id="subscriptionForm" action="https://formsubmit.co/nonette837@gmail.com" method="POST" enctype="multipart/form-data">
+                <input type="text" name="name" placeholder="Votre nom" required><br>
+                <input type="text" name="youtube_name" placeholder="Nom d'utilisateur YouTube" required><br>
+                <input type="email" name="email" placeholder="Votre e-mail" required><br>
+                <input type="text" name="design_name" placeholder="Nom du motif de broderie" required><br>
+
+                <!-- Champ pour l'upload de la capture d'écran -->
+                <input type="file" name="screenshot" accept="image/*" required><br>
+                <small class="note">Uploadez une capture d'écran montrant votre abonnement à la chaîne YouTube.</small><br><br>
+
+                <input type="hidden" name="_subject" value="Nouvelle demande de broderie">
+                <button class="submit-button" type="submit">Envoyer</button>
+            </form>
+            <p class="note">Merci de patienter 24-48 heures, votre motif de broderie sera envoyé par email.</p>
+        </div>
+    </div>
+
+    <!-- Pas besoin de JavaScript dans ce cas -->
+</body>
+</html>
